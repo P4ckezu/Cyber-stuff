@@ -1,0 +1,14 @@
+Date: 2026/10/25
+Status: Complete
+
+Objective: 
+Think like a hacker trying to find vulnerabilities.
+
+Learned: 
+That the dirb command exists. Used it to find hidden pages. 
+
+Commands used:
+dirb - Finds hidden pages.
+
+Link: 
+https://tryhackme.com/room/offensivesecurityintro
