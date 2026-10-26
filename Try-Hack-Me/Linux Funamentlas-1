@@ -1,0 +1,27 @@
+Date: 2026/10/26
+Status: Complete
+
+Objective: 
+Teach the basics of terminal navigation.
+
+Learned: 
+Some commands for users, navigation and file editing.
+What operators are.
+Up- and down arrows allow you to go through already used commands.
+
+Commands used:
+whoami - Tells who you are on the system.
+echo - Outputs a specific text that is provided also if multiple words use "", if not just type the word.
+ls - List what's in the current folder.
+cd - Change directory so move in to another folder.
+cat - Show the contents of a file.
+pwd - Print working directory tell where you are or in which folder you're in.
+find - Search for files by their name. For example: find -name passwords.txt .
+grep - Searches inside for text. For example: grep "password123" passwords.txt .
+& - Runs the command, but doesn't wait for it to finish. Good for commands that might take a while to finish.
+&& - Runs both commands, but waits for the first command to finish first, before the next.
+> - Used to redirect output. Takes the output of a command and sends it to a file. Will overwrite anything that exists in the file.
+>> - Redirects output, but instead of overwriting data, it places it at the bottom of the file.
+
+Link: 
+https://tryhackme.com/room/linuxfundamentalspart1
