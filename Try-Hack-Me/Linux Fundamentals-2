@@ -1,0 +1,31 @@
+Date: 2026/10/27
+Status: In complete
+
+Objective: 
+Learn basics about SSH, arguemnts and file management.
+
+Learned: 
+What SSH (Secure Socket Shell) is.
+What arguments are.
+
+
+Commands used:
+ssh - Allows remote access of another machine.
+ls -a - Lists all contents inside a folder.
+touch - Creates files
+mkdir - Creates a folder
+cp - Copy a file or folder
+mv - Move a file or folder
+rm - Remove a file or folder
+
+
+Notes:
+SSH - Lets devices talk to each other over a network. Whatever you send cannot be read by anyone else while it's travelling across the internet. Once the contents reach the other machine the contents will be revealed. It allows the remote use of another computer.
+Using SSH for remote connection - You need the IP address of the remote computer and the username and password for an account that is on that remote computer.
+Arguments - Most commands accept an extra option(s) -a short for (--all), which for example combined with the command ls shows all contents inside the folder like hidden files. Hidden files start with (.) .
+man - Opens the manual for chosen commands. Close the manual using (Ctrl + C)
+--help - Lets you see (most) of the time which commands allow arguments.
+rm - Allows you to remove files or directories BUT when removing a directory you have to add the argument -R in the middle. For example: rm -R mydirectory.
+
+Link:
+https://tryhackme.com/room/linuxfundamentalspart2
