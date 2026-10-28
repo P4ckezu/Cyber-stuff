@@ -1,31 +1,38 @@
 Date: 2026/10/27
-Status: Incomplete
+Status: Complete
 
 Objective: 
-Learn basics about SSH, arguemnts and file management.
+Teach the basics of SSH, arguemnts and file management and also linux directory structure. Also remember to use man or -h to aid you in your journey.
 
 Learned: 
 What SSH (Secure Socket Shell) is.
 What arguments are.
-
+About the directory hierarchy.
+Stuff about user permissions.
 
 Commands used:
 ssh - Allows remote access of another machine.
 ls -a - Lists all contents inside a folder.
-touch - Creates files
-mkdir - Creates a folder
-cp - Copy a file or folder
-mv - Move a file or folder
-rm - Remove a file or folder
-
+touch - Creates files.
+mkdir - Creates a folder.
+cp - Copy a file or folder.
+mv - Move a file or folder.
+rm - Remove a file or folder.
+su - Switch user.
 
 Notes:
 SSH - Lets devices talk to each other over a network. Whatever you send cannot be read by anyone else while it's travelling across the internet. Once the contents reach the other machine the contents will be revealed. It allows the remote use of another computer.
 Using SSH for remote connection - You need the IP address of the remote computer and the username and password for an account that is on that remote computer.
 Arguments - Most commands accept an extra option(s) -a short for (--all), which for example combined with the command ls shows all contents inside the folder like hidden files. Hidden files start with (.) .
-man - Opens the manual for chosen commands. Close the manual using (Ctrl + C)
+man - Opens the manual for chosen commands. Close the manual using (Ctrl + C).
 --help - Lets you see (most) of the time which commands allow arguments.
 rm - Allows you to remove files or directories BUT when removing a directory you have to add the argument -R in the middle. For example: rm -R mydirectory.
+root - The top of a directory or user privelege / .
+/etc (etcetera) - Where the system and programfiles are stored.
+/var (variable data) - Stores data that applications and services write to or read.
+/root - The home directory for the root user.
+/tmp (temporary) - Things you might need once or twice. Once the computer is restarted, the contents of this folder are cleared out.
+su - Allows you to switch users if you have the passwords and names. Root user doesnt need passwords to switch. To switch you do this: su <name>.
 
 Link:
 https://tryhackme.com/room/linuxfundamentalspart2
