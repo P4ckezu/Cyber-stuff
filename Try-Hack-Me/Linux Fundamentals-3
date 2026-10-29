@@ -1,0 +1,36 @@
+Date: 2026/10/29
+Status: Incomplete Left at task 5 managing processes
+
+Objective: 
+Teach file creation, remote computer interaction and 
+
+Learned: 
+What nano does and what VIM is.
+What SCP is.
+Ubuntu machines come pre-packaged with python3.
+What HTTPServer module is.
+
+
+Commands used:
+nano - Terminal text editor.
+python3 -m http.server - Turns the computer into a quick and easy web server.
+ps - Provides a list of the running processes and some additional info like how much usage time of the CPU the program is using.
+ps aux - Provides a list of processes run by other users and those that don't run from a session.
+kill - Shuts down the process with the provided PID. For example kill 1337 .
+
+
+
+notes:
+Exiting nano - Exit nano using (Ctrl + X).
+VIM - More advanced text editor. Keyboard shortcuts, syntax highlighting, works on all terminals where nano may not be installed.
+wget - Allows the user to download files from the web via http, as if the user was accessing the file in his browser. Just provide the address and that's it.
+SCP (Secure copy) - Just a means of securely copying files. Unlike the regular cp command, this allows the user to transfer files between two cvomputers using the SSH to provide both authentication and encryption.
+SCP examples - scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt (SENDS A FILE TO A REMOTE COMPUTER). - scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt (TAKES A FILE FROM A REMOTE COMPUTER).
+HTTPServer - Python3 provided module, which allows the user to turn the computer into a web server that you can use to serve your own files, where they can be downloaded by another computing using commands like curl and wget.
+PID - Processes have a PID like the 60th process will have a PID of 60.
+kill command variations - SIGTERM: Kills the process, but allows it to do some cleanup tasks beforehand. SIGKILL: Kills the process and doesn't do any clean up after. SIGSTOP: Stop/Suspend a process.
+
+
+
+Link: 
+https://tryhackme.com/room/linuxfundamentalspart3
