@@ -1,8 +1,8 @@
 Date: 2026/10/29
-Status: Incomplete Left at task 5 managing processes
+Status: Incomplete
 
 Objective: 
-Teach file creation, remote computer interaction and 
+Teach file creation, remote computer interaction, how processes work
 
 Learned: 
 What nano does and what VIM is.
@@ -17,7 +17,7 @@ python3 -m http.server - Turns the computer into a quick and easy web server.
 ps - Provides a list of the running processes and some additional info like how much usage time of the CPU the program is using.
 ps aux - Provides a list of processes run by other users and those that don't run from a session.
 kill - Shuts down the process with the provided PID. For example kill 1337 .
-
+systemctl - Allows the user to start, stop, enable, disable and status a process. For example: systemctl stop myservice .
 
 
 notes:
@@ -29,6 +29,14 @@ SCP examples - scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.tx
 HTTPServer - Python3 provided module, which allows the user to turn the computer into a web server that you can use to serve your own files, where they can be downloaded by another computing using commands like curl and wget.
 PID - Processes have a PID like the 60th process will have a PID of 60.
 kill command variations - SIGTERM: Kills the process, but allows it to do some cleanup tasks beforehand. SIGKILL: Kills the process and doesn't do any clean up after. SIGSTOP: Stop/Suspend a process.
+Pausing a script - (Ctrl + Z), instead of relying on & operator.
+Backgrounding a process - & operator lets the command run in the background and you can pause it with (Ctrl + Z).
+Foregrounding a process - fg command to bring back the running command into focus
+Systemd - Usually the first process that starts when booting computer so PID 1. Used to provide a way of managing a user's processes and sits in between the operating system and the user.
+
+cron and crontabs - Crontab is one of the processes that is started during boot. Crontab is recognised by the cron process to execute each line step-by-step. Crontabs require 6 values: MIN, HOUR, DOM, MON, DOW and CMD.
+MIN: What minute to execute at. HOUR: what hour to execute at. DOM: What day of the month to execute at. MON: What month of the year to execute at. DOW: What day of the week to execute at. CMD: The acutal command that is executed
+cron example: 0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
 
 
 
