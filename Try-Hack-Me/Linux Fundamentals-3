@@ -1,15 +1,15 @@
 Date: 2026/10/29
-Status: Incomplete
+Status: Complete
 
 Objective: 
-Teach file creation, remote computer interaction, how processes work
+Teach file creation, remote computer interaction, how processes work and 
 
 Learned: 
 What nano does and what VIM is.
 What SCP is.
 Ubuntu machines come pre-packaged with python3.
 What HTTPServer module is.
-
+How to monitor logs.
 
 Commands used:
 nano - Terminal text editor.
@@ -18,7 +18,6 @@ ps - Provides a list of the running processes and some additional info like how 
 ps aux - Provides a list of processes run by other users and those that don't run from a session.
 kill - Shuts down the process with the provided PID. For example kill 1337 .
 systemctl - Allows the user to start, stop, enable, disable and status a process. For example: systemctl stop myservice .
-
 
 notes:
 Exiting nano - Exit nano using (Ctrl + X).
@@ -38,7 +37,8 @@ cron and crontabs - Crontab is one of the processes that is started during boot.
 MIN: What minute to execute at. HOUR: what hour to execute at. DOM: What day of the month to execute at. MON: What month of the year to execute at. DOW: What day of the week to execute at. CMD: The acutal command that is executed
 cron example: 0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
 
-
+apt (Advanced package tool) - Allows the user to install, remove, update and manage software packages.
+log monitoring - /var/log/ .
 
 Link: 
 https://tryhackme.com/room/linuxfundamentalspart3
