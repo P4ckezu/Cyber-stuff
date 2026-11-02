@@ -1,0 +1,28 @@
+Date: 2026/11/02
+Status: Complete
+
+Objective: 
+Log into bandit1 using ssh and the info from bandit0.
+
+Commands used:
+(TERMINAL 1)
+pwd
+ls
+cat readme
+
+(TERMINAL 2)
+ssh -p 2220 bandit1@bandit.labs.overthewire.org
+
+Thought process:
+I read the instructions and saw that the password for bandit1 is inside bandit0's home directory in a file called readme.
+So i used pwd even though I knew where I was from the ~ logo.
+Used ls after to see if the file is there (it was).
+Used cat readme, and there the password was.
+Switched over to my second terminal and used ssh to log in.
+Copied the password and that was it.
+
+Bandit1 password:
+6y2kwnwK6grgvwvpvLaa2T1cpFEK0hNR
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit1.html
