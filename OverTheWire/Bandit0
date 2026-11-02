@@ -1,0 +1,16 @@
+Date: 2026/11/02
+Status: Complete
+
+Objective: 
+Log into the game using ssh.
+
+Commands used: 
+ssh -p <port number> bandit0@bandit.labs.overthewire.org .
+
+Thought process:
+At first i tried ssh bandit0@bandit.labs.overthewire.org, but that didn't work i had to use the given port.
+Wasn't 100% sure how to use ssh using a port. So i visited a website that gave me a rough idea.
+I tried again and this time it worked.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit0.html
