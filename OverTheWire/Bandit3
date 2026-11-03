@@ -1,0 +1,27 @@
+Date: 2026/11/03
+Status: Complete
+
+Objective: 
+Log into bandit3 using info from bandit2 but this time the file name contains spaces.
+
+Commands used:
+(TERMINAL 1)
+ls
+cat /home/bandit2/--spaces in this filename--
+cat -- "--spaces in this filename--"
+
+(TERMINAL 2)
+ssh -p 2220 bandit3@bandit.labs.overthewire.org
+
+Thought process:
+I guess I'll try the thing i did in the last one.
+It worked.
+So cat the path.
+It felt too easy so I tried something different. I used cat -- "<Filename>".
+That worked too so yeah.
+
+Bandit3 password:
+7ZZ2LFrykP2zEyvBl4m3clc7tGYJPME
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit3.html
