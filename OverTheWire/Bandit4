@@ -1,0 +1,27 @@
+Date: 2026/11/03
+Status: Complete
+
+Objective: 
+Same as always but this time the login details are in a hidden file.
+
+Commands used:
+(TERMINAL 1)
+ls -a
+cd inhere
+ls -a
+cat ...Hiding-From-You
+
+(TERMINAL 2)
+ssh -2220 bandit4@bandit.labs.overthewire.org
+
+Thought process:
+Since it is inside a hidden file i run ls -a to check if it is there. I only found a few hidden files but they are built in like bash.
+There was a directory called inhere.
+So i went there using cd and used ls -a. I found a file called ...Hiding-From-You .
+So of course I opened it using cat and there the password was.
+
+Bandit4 password:
+xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit4.html
