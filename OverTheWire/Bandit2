@@ -1,0 +1,26 @@
+Date: 2026/11/03
+Status: Complete
+
+Objective: 
+Log into bandit2 using info from bandit1. But this time the file which contains the password is called - .
+
+Commands used:
+(TERMINAL 1)
+ls
+man cat
+cat /home/bandit1/-
+
+(TERMINAL 2)
+ssh -p 2220 bandit2@bandit.labs.overthewire.org
+
+Thought process:
+Checking if the file is there using ls, and it is.
+Since the name is -, I'm sure I cant use cat - .
+I tried man cat and searched for a bit until i found a cat command using the file's path.
+So I tried to cat the path and it worked.
+
+Bandit2 password:
+PK8fYLZg2hnHSz83plBL1iEPKdD3QTob
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit2.html
