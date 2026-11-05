@@ -1,0 +1,17 @@
+Date: 2026/11/05
+Status: Complete
+
+Objective: 
+Teach the basics of computer types and how to tell them apart.
+
+Learned: 
+What IoT devices are.
+Difference between ECC and RAM.
+
+notes:
+IoT (Internet of Things) - Physical objects/things that are embedded with sensors and software which allow them to collect and exchange data over the internet. Single purpose.
+IoT devices - Such as thermostat and refrigerators.
+ECC - RAM memory that is able to detect and automatically fix single-bit data corruption caused by noise or magnetic interference. Used mostly in workstations and servers.
+
+Link: 
+https://tryhackme.com/room/computertypes
