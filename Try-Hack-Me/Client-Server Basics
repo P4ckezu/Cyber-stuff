@@ -2,15 +2,21 @@ Date: 2026/11/06
 Status: Incomplete
 
 Objective: 
-
+Teach the basics of DNS, client, server, port, protcol and network.
 
 Learned: 
-
+Well the objectives.
 
 Commands used:
 
 
 notes:
+Client - The one that initiates the request. For example a browser that requests the webpage.
+Request and response - User used a browser (the client) to request a webpage from a serverm which sent the webpage to the client.
+Protocol - Defines how a client can communicate with a server. Like which commands the client and server understand.
+Port - Used to identify a specific service running on a system.
+DNS (Domain name system) - Responsible for resolving hostnames, such as github.com to their respective IP addresses.
+IP address (Internet protocol address) - The address of a server.
 
 
 Link:
