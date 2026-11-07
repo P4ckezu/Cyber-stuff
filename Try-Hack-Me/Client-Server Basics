@@ -1,14 +1,13 @@
 Date: 2026/11/06
-Status: Incomplete
+Status: Complete
 
 Objective: 
 Teach the basics of DNS, client, server, port, protcol and network.
 
 Learned: 
-Well the objectives.
-
-Commands used:
-
+What the objectives meant.
+Some basic HTTP commands/methods.
+Also did a HTTP GET request demo and learned a bit about the firefox inspect/f12 page.
 
 notes:
 Client - The one that initiates the request. For example a browser that requests the webpage.
@@ -17,7 +16,7 @@ Protocol - Defines how a client can communicate with a server. Like which comman
 Port - Used to identify a specific service running on a system.
 DNS (Domain name system) - Responsible for resolving hostnames, such as github.com to their respective IP addresses.
 IP address (Internet protocol address) - The address of a server.
-
+HTTP(S) (Hypertext Transfer protocol (secure)) - Stateless client-server protocol used for the World Wide Web (www).
 
 Link:
 https://tryhackme.com/room/clientserverbasics
