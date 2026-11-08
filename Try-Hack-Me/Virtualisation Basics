@@ -2,15 +2,28 @@ Date: 2026/11/08
 Status: Incomplete
 
 Objective: 
-Teach what virtualisation is, lab machine components and why individual physical servers are inefficient at managing applications.
+Teach what virtualisation is and lab machine components.
 
 Learned: 
+What virtualisation is.
 
 
 Commands used:
 
 
 notes:
+Hypervisor - Acts as a referee between lab machines and allows each virtual computer to behave independently.
+Virtual computer/lab machine - Acts as an independent system with it's own operating system, programs, and settings even though they all share the same physical hardware underneath.
+Two types of hypervisors:
+  Type 1 - Run directly on physical hardware making them efficient. Useful for database servers and data centers.
+  Type 2 - Run within an existing operating system making them easy to install. Useful for learning and testing.
+
+Virtualisation simply:
+  The building = the physical server
+  The apartments = lab machines
+  The tenants = applications or operating systems
+  The building manager = the hypervisor (divides the building safely)
+
 
 
 Link: 
