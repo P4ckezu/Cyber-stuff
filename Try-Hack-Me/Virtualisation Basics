@@ -1,15 +1,13 @@
 Date: 2026/11/08
-Status: Incomplete
+Status: Complete
 
 Objective: 
 Teach what virtualisation is and lab machine components.
 
 Learned: 
 What virtualisation is.
-
-
-Commands used:
-
+That virtual machines can run directly on physical hardware.
+"Virtualisation managing" using a demo made by THM, where i analyzed and created lab machines and analyzed hardware usage.
 
 notes:
 Hypervisor - Acts as a referee between lab machines and allows each virtual computer to behave independently.
@@ -17,14 +15,12 @@ Virtual computer/lab machine - Acts as an independent system with it's own opera
 Two types of hypervisors:
   Type 1 - Run directly on physical hardware making them efficient. Useful for database servers and data centers.
   Type 2 - Run within an existing operating system making them easy to install. Useful for learning and testing.
-
+Virtualisation - A way to run more operating systems on a single phyiscal machine.
 Virtualisation simply:
   The building = the physical server
   The apartments = lab machines
   The tenants = applications or operating systems
   The building manager = the hypervisor (divides the building safely)
-
-
 
 Link: 
 https://tryhackme.com/room/virtualisationbasics
