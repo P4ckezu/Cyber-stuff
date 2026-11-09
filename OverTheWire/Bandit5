@@ -1,0 +1,25 @@
+Date: 2026/11/09
+Status: Complete
+
+Objective: 
+Find the human-readable file amongst many.
+
+Commands used:
+cd - Changes directory
+ls -la - Lists all files
+file ./* - Shows the file type and ./ means path to the file in this case (*), which means all files.
+cat ./-file07 - Checks the insides of that file
+
+Thought process:
+Since it is in an human readable file it has to differ somehow.
+So i went to the directory and checked the contents using ls. It gave me back 10 files total.
+So i couldve used cat on all the files till i found the right one, but that would be inefficient.
+I searched the web for a way to type the current directory path quickly and found ./   .
+Now i used file ./* , since * checks all the contents inside the directory.
+One of the files was ASCII and the others were data. The ASCII was the only human readable and there the password was.
+
+Password:
+I made a directory for passwords so ill keep track of them myself.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit5.html
