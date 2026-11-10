@@ -1,0 +1,23 @@
+Date: 2026/11/10
+Status: Incomplete
+
+Objective: 
+Give a simple introduction to how the internet works and how to identify devices on a network so IP.
+
+Learned: 
+Tim Berners-lee created the world wide web (WWW) in 1989.
+Private- and public networks.
+Difference between IPv4 and IPv6.
+
+notes:
+Networking - Basically a group of devices connected together.
+Internet - Made up of many small networks connected together.
+Private network - Small networks mentioned above.
+Public network - The internet so the network connecting these private networks.
+IP address (Internet Protocol):
+  Made from 4 octets from 0-255 per number for example 192.168.1.1. Comes from 2^8 - 1.
+  
+
+
+Link: 
+https://tryhackme.com/room/whatisnetworking
