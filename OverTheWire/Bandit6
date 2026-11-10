@@ -1,0 +1,23 @@
+Date: 2026/11/10
+Status: Complete
+
+Objective: 
+Find the password for the next lab using file size, or if the file is executable, or human readable.
+
+Commands used:
+ls - Lists stuff inside directory.
+cd - Changes directory.
+file ./* - Checks the file type of every file in the directory using current path.
+man find - Shows the manual page of the find command.
+find ./* -size 1033c - Finds the file with the given size 1033c which is 1033 bytes.
+cat .file2 - Echos the stuff inside the file.
+
+Thought process:
+So i don't really know what to do, so ill start by checking whats inside the home directory using ls.
+Saw a directory, opened it, used ls -la and then file ./* and every file was a directory.
+Didn't know how to check file sizes or if they were executable. So i used man find and looked around found -size and -executable.
+Tried it wasn't 100% sure how to specify that i wanted to find bytes so i looked through the internet what and found that it's c.
+Then used find ./* -size 1033c and got one file back and the path to it. Opened the directory and cat the file .file2 and there it was.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit6.html
