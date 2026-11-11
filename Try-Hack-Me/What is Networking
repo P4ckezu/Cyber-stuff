@@ -1,5 +1,5 @@
 Date: 2026/11/10
-Status: Incomplete
+Status: Complete
 
 Objective: 
 Give a simple introduction to how the internet works and how to identify devices on a network so IP.
@@ -8,6 +8,7 @@ Learned:
 Tim Berners-lee created the world wide web (WWW) in 1989.
 Private- and public networks.
 Difference between IPv4 and IPv6.
+What a MAC address is.
 
 notes:
 Networking - Basically a group of devices connected together.
@@ -16,8 +17,21 @@ Private network - Small networks mentioned above.
 Public network - The internet so the network connecting these private networks.
 IP address (Internet Protocol):
   Made from 4 octets from 0-255 per number for example 192.168.1.1. Comes from 2^8 - 1.
-  
-
+  Used as a way of identifying a host on a network for a period of time.
+Media access control (MAC) address:
+  Assigned numbering at factory when built.
+  Twelve-character hexadecimal number.
+  First 6 characters represent the company that made the network interface.
+  Last 6 characters are unique numbers.
+    Example: a4:c3:f0:85:ac:2d . Also (:) are separators.
+Spoofing - Faking a MAC address.
+IPv4 - Uses numbering system of 2^32 (4.29 billion).
+IPv6 - Uses numbering system of 2^128 (340 trillion-plus).
+IPv4 and IPv6 Examples:
+  IPv4: 86.157.52.21 .
+  IPv6: 2a00:22c4:a531:c500:425f:cce6:c36b:f64d .
+Ping - Uses ICMP packets to determine the performance of a connnection between devices. ICMP (Internet Control Message Protocol).
+To do a simple ping - ping <Ip address> or <Website url> .
 
 Link: 
 https://tryhackme.com/room/whatisnetworking
