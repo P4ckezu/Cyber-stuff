@@ -20,8 +20,5 @@ There was a directory called inhere.
 So i went there using cd and used ls -a. I found a file called ...Hiding-From-You .
 So of course I opened it using cat and there the password was.
 
-Bandit4 password:
-xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
-
 Link: 
 https://overthewire.org/wargames/bandit/bandit4.html
