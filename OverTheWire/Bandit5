@@ -18,8 +18,5 @@ I searched the web for a way to type the current directory path quickly and foun
 Now i used file ./* , since * checks all the contents inside the directory.
 One of the files was ASCII and the others were data. The ASCII was the only human readable and there the password was.
 
-Password:
-I made a directory for passwords so ill keep track of them myself.
-
 Link: 
 https://overthewire.org/wargames/bandit/bandit5.html
