@@ -19,8 +19,5 @@ Since the name is -, I'm sure I cant use cat - .
 I tried man cat and searched for a bit until i found a cat command using the file's path.
 So I tried to cat the path and it worked.
 
-Bandit2 password:
-PK8fYLZg2hnHSz83plBL1iEPKdD3QTob
-
 Link: 
 https://overthewire.org/wargames/bandit/bandit2.html
