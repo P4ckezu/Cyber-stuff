@@ -1,0 +1,22 @@
+Date: 2026/11/12
+Status: Complete
+
+Objective: 
+Find the file from the server with given info : user, group, type, size.
+
+Commands used:
+ls - list contents.
+ls -la - list all contents.
+find / -type f -user bandit7 -group bandit6 -size 33c - finds files matching the given info so file type, user, group and file size
+  / means root directory not home but root -size 33c means 33 bytes.
+cat /var/lib/dpkg/info/bandit7.password - Checks the file contents.
+
+Thought process:
+Check the home directory using ls. Nothing.
+So lets use find and use the given info. Im not quite sure how the directories work yet so i tried ./* to check the current path's files.
+Didn't work so lets try the root directory. I got a lot of returned files but most had the text permission denied written on them.
+So i scrolled for a bit until i found the word password and it looked a little different from the rest so i tried to cat the file.
+There it was.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit7.html
