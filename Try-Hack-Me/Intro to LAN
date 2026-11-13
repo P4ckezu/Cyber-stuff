@@ -1,11 +1,13 @@
 Date: 2026/11/12
-Status: Incomplete
+Status: Complete
 
 Objective: 
-Basics of LAN and the components used in it.
+Basics of LAN and the components used in it also about addresses.
 
 Learned: 
 Why hubs are worse than switches overall.
+What LAN topologies are and how they work.
+What subnetting is.
 
 notes:
 LAN (Local Area Network) - Connects computers and other devices to a dedicated area like home, office or school.
@@ -27,6 +29,15 @@ Subnet mask - 32-bit number in IPv4 networks to divide an IP address into two pa
   Network address - Identifies the start of the actual network and is used to identify a network's existence.
   Host address - An IP address used to identify a device on the subnet.
   Default gateway - Special address assigned to a device on the network that is capablle of sending information to another network.
+ARP (Address resolution protocol) - Technology that is responsible for allowing devices to identify themselves on a network.
+  Cache - The information stored on each device within the network. ARP context: Stores the identifiers of other devices on the network MAC and IP.
+  ARP request - Broadcasted on the network to other devices asking "Whats the mac address that owns this IP address.
+  ARP reply - When a device recieves an ARP request they will only respond if they own that IP address and will send a reply with its MAC address.
+DHCP (Dynamic host configuration protocol) - Automatic IP address assigner.
+  DHCP discover - If a device hasn't been assigned a IP address manually it sends out a request to see if any DHCP servers are on the network.
+  DHCP offer - DHCP replies back with an IP address the device could use.
+  DHCP request - The device sends a reply a confirming it wants the offered IP address.
+  DHCP ACK - The DHCP server sends a reply acknowledging this has been completed, and the device can start using th IP address.
 
 Link: 
 https://tryhackme.com/room/introtolan
