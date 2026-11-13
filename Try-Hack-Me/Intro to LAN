@@ -1,0 +1,32 @@
+Date: 2026/11/12
+Status: Incomplete
+
+Objective: 
+Basics of LAN and the components used in it.
+
+Learned: 
+Why hubs are worse than switches overall.
+
+notes:
+LAN (Local Area Network) - Connects computers and other devices to a dedicated area like home, office or school.
+LAN topologies:
+  Star topology - Devices are connected individually via a central networking device such as a swith or hub.
+    Pros - Reliable and scalable.
+    Cons - Costs more than others, high maintenance, harder troubleshoot,
+  Bus topology - Devices connected to a single cable known as the backbone cable.
+    Pros - Cost-efficient.
+    Cons - Prone to bottlenecks, becoming slow and harder troubleshoot.
+  Ring topology - Devices connected to to eachother to form a loop
+    Pros - Only one direction data can travel so easy to troubleshoot. Less prone to bottlenecks than bus topology.
+    Cons - It isn't efficient.
+Switch - Connect devices to the same network and allows data to travel by MAC addresses.
+Hub - The worse switch. Sends the data to all devices connected.
+Router - Connects netowrks and passes data between them. 
+Subnetting - Splitting up a network into smaller, miniature networks within itself.
+Subnet mask - 32-bit number in IPv4 networks to divide an IP address into two parts. The network portion and host (device) portion.
+  Network address - Identifies the start of the actual network and is used to identify a network's existence.
+  Host address - An IP address used to identify a device on the subnet.
+  Default gateway - Special address assigned to a device on the network that is capablle of sending information to another network.
+
+Link: 
+https://tryhackme.com/room/introtolan
