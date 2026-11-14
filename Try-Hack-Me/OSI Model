@@ -2,14 +2,33 @@ Date: 2026/11/14
 Status: Incomplete
 
 Objective: 
-
+Teach the 7 layers of OSI model
 
 Learned: 
 
 
 notes:
 OSI (Open systems interconnection) model - Provides a framework dicatating how all networked devices will send, receive and interpret data.
+  OSI model layers (7):
+    Layer 1 (Physical) - Simply, this layer references the physical components of the hardware used in networking. Devices use binary 0 and 1.
+    Layer 2 (Data link) - Focuses on the physical addressing of the transmission. Receives a packet from the netowrk layer and adds in the physical MAC address of the receiving endpoint.
+    Layer 3 (Network) - Routing and re-assembly of data takes place. In this layer everything is dealt with via IP adresses.
+    Layer 4 (Transport) - Plays a vital part in transmitting data across a network. Data sent between devices follow TCP and UDP.
+    Layer 5 (Session) - 
+    
+NIC (Network interface card) - Comes with a unique MAC address to identify it.
 Encapsulation - Pieces of information get added to data.
+OSFP (Open shortest first path) - Calculates the most efficient path to each destination.
+RIP (Routing information protocol) - Automatically manages and exchanges routing information within a single autonomous system.
+TCP (Transmission control protocol) - Reserves a constant connection between the two devices for the amount of time it takes for the data to be sent and received.
+                                      Incorporates Error checking into its design. Used for situation such as file sharing, internet browsing or sending and email.
+UDP (User datagram protocol) - Like TCP but less reliable and isn't as advanced. Any data sent via UDP is sent to the computer wheter it gets there or not.
+                               Useful in situations where there are small pieces of data being sent. For example ARP and DHCP (Protocols for discovering devices.)
+
+
+
+
+
 
 
 
