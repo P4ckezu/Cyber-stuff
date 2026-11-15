@@ -1,0 +1,25 @@
+Date: 2026/11/15
+Status: Complete
+
+Objective: 
+Find password inside data.txt file. Password is next to the word millionth.
+
+Commands used:
+ls -a - lists all files inside the directory.
+cat data.txt - echoes whatever is inside the file.
+man grep - manual for grep
+grep --help - the page that helps with examples and options.
+grep -i "millionth" data.txt - Checks inside the file and finds the line that matches the command the user searched for.
+                              -i ignores the "", used for words that have spaces.
+
+Thought process:
+So im gonna start with checking whether or not the file is in the home directory using ls -a.
+It was there so i know that the password is next to "millionth" inside a file called data.txt .
+So i ran cat data.txt and i got bombed with words. So i knew i had to use grep for this one.
+Didn't know how, so i just used man grep and grep --help. What worked for me was grep --help since it gave me an example.
+I used grep -i "millionth" data.txt . I know i didnt need the -i since the word doesn't have any spaces in it or so i think let me test real quick.
+Yeah i didn't need them but i still learned it so grep millionth data.txt .
+And that's where the password was on the same line next to the word millionth.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit8.html
