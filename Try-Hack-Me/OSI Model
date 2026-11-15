@@ -1,11 +1,13 @@
 Date: 2026/11/14
-Status: Incomplete
+Status: Complete
 
 Objective: 
-Teach the 7 layers of OSI model
+Teach the 7 layers of OSI model.
 
 Learned: 
-
+What OSI model does/or means.
+The 7 layers.
+Some lingo.
 
 notes:
 OSI (Open systems interconnection) model - Provides a framework dicatating how all networked devices will send, receive and interpret data.
@@ -14,8 +16,10 @@ OSI (Open systems interconnection) model - Provides a framework dicatating how a
     Layer 2 (Data link) - Focuses on the physical addressing of the transmission. Receives a packet from the netowrk layer and adds in the physical MAC address of the receiving endpoint.
     Layer 3 (Network) - Routing and re-assembly of data takes place. In this layer everything is dealt with via IP adresses.
     Layer 4 (Transport) - Plays a vital part in transmitting data across a network. Data sent between devices follow TCP and UDP.
-    Layer 5 (Session) - 
-    
+    Layer 5 (Session) - Creates and maintains connection to the other computer for which the data is destined. When a connection is established, a session is created.
+    Layer 6 (Presentation) - Acts as a translator for data to and from the application layer 7. For example when sending an email via different clients, the message sent has to stay the same. This is what handles that.
+    Layer 7 (Application) - Just the application we're familiar with. Rules and protocols are in place to determine how the user should interact with data sent or received
+
 NIC (Network interface card) - Comes with a unique MAC address to identify it.
 Encapsulation - Pieces of information get added to data.
 OSFP (Open shortest first path) - Calculates the most efficient path to each destination.
@@ -24,13 +28,7 @@ TCP (Transmission control protocol) - Reserves a constant connection between the
                                       Incorporates Error checking into its design. Used for situation such as file sharing, internet browsing or sending and email.
 UDP (User datagram protocol) - Like TCP but less reliable and isn't as advanced. Any data sent via UDP is sent to the computer wheter it gets there or not.
                                Useful in situations where there are small pieces of data being sent. For example ARP and DHCP (Protocols for discovering devices.)
-
-
-
-
-
-
-
+GUI (Graphical user interface) - The interface in which you interact with stuff like resource management or this github page.
 
 Link: 
 https://tryhackme.com/room/osimodelzi
