@@ -19,7 +19,7 @@ Data streams - Every program ran on the command line automatically has three dat
   STDOUT (1) - Standard output (data printed by the program).
   STDERR (2) - Standard error (for error messages).
 Redirection - Uses greater than (>), signs to redirect the output to a file or directory or whatever. Can be used both ways.
-
+Piping
 
 Link: 
 https://overthewire.org/wargames/bandit/bandit9.html
