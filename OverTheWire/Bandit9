@@ -1,17 +1,24 @@
 Date: 2026/11/16
-Status: Incomplete
+Status: Complete
 
 Objective: 
-
+Find the password stored in data.txt on the line that only appears once.
 
 Learned:
 What piping and redirection is.
 
 Commands used:
-
+sort data.txt - Sorts file contents.
+uniq -u data.txt - Prints out all unique lines.
+sort data.txt | uniq -u - Piping the output of the left program to the right one where the only line left is the unique one.
 
 Thought process:
 No clue what to do, so i'll read the reading material given by overthewire.
+Now i'll man some things. Trying uniq -u data.txt . Nothing really changed i think.
+Sorting should do something since there are a lot of duplicates so sort data.txt .
+Oh it all makes sense now i have to use piping to do sorting then uniq -u to get the correct one.
+Since uniq only looks at lines next to each other i have to sort. Testing sort data.txt | uniq -u .
+There it is
 
 Notes:
 Data streams - Every program ran on the command line automatically has three data streams:
@@ -19,7 +26,7 @@ Data streams - Every program ran on the command line automatically has three dat
   STDOUT (1) - Standard output (data printed by the program).
   STDERR (2) - Standard error (for error messages).
 Redirection - Uses greater than (>), signs to redirect the output to a file or directory or whatever. Can be used both ways.
-Piping
+Piping - Uses vertical line/pipe line (|), sign to feed the output from the program on the left as input to the program on the right.
 
 Link: 
 https://overthewire.org/wargames/bandit/bandit9.html
