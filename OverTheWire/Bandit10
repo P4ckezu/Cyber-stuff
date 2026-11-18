@@ -1,0 +1,19 @@
+Date: 2026/11/18
+Status: Complete
+
+Objective: 
+Find the password inside data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+
+Commands used:
+man strings, base64 - Just the manual for those commands.
+cat data.txt | strings - So cats the file and pipes the output to strings which outputs only characters.
+cat data.txt | strings | grep == - Same as the one above but this time looks for the ones beginning with == .
+
+Thought process:
+So let's just check if the file is there ls. It is so lets use cat and it's total gibberish.
+Now we just used man on some of the given commands. So i think i have to use piping again.
+So if i cat the file and pipe it to strings. I already saw the password there but i'll try to find it easier.
+So doing the same pipe but to grep == , since the password is preceded by several == characters. And thats easier.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit10.html
