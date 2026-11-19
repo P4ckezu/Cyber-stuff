@@ -7,7 +7,7 @@ Find the password inside data.txt in one of the few human-readable strings, prec
 Commands used:
 man strings, base64 - Just the manual for those commands.
 cat data.txt | strings - So cats the file and pipes the output to strings which outputs only characters.
-cat data.txt | strings | grep == - Same as the one above but this time looks for the ones beginning with == .
+cat data.txt | strings | grep == - Same as the one above but this time looks for the lines/words beginning with == .
 
 Thought process:
 So let's just check if the file is there ls. It is so lets use cat and it's total gibberish.
