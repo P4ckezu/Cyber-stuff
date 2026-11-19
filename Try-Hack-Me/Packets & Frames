@@ -1,0 +1,22 @@
+Date: 2026/11/19
+Status: Incomplete
+
+Objective: 
+
+
+Learned: 
+
+
+notes:
+Trick to remember OSI model layers - Please Do Not Throw Sausage Pizza Away.
+Packet - Piece of data from layer 3 (Network) of OSI model. Contains info such as an IP header and payload.
+  Headers:
+    Time to live - Timer for the packet to not clog up your network if it never manages to reach a host or escape.
+    Checksum - Provides integrity checking for protocols such as TCP/IP. If any data is changed, this value will be different from what was expected therefore corrupt.
+    Source address - IP address of the device that packet is being sent from so that data knows where to return to.
+    Destination address
+Frame - Piece of data used at layer 2 (Data)of the OSI model. Encapsulates the packet and adds additional info such as MAC addresses.
+
+
+Link: 
+https://tryhackme.com/room/packetsframes
