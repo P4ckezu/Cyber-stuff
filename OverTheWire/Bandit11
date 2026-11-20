@@ -1,0 +1,20 @@
+Date: 2026/11/20
+Status: Complete
+
+Objective: 
+Find the password in the data.txt file which contains base64 encoded data.
+
+Commands used:
+ls - Lists contents of the current directory.
+man base64 - Manual for the command base64.
+base64 --help - Helps with the use by giving you usage, arguments and options.
+base64 -d data.txt - decodes the base64 encoded text.
+
+Thought process:
+This doesn't seem too hard so i used ls and the file was there.
+I used man base64 and read through till i came across -d which is --decode and its supposed to decode encoded text.
+So i wasn't 100% sure how to use it so i did base64 --help and i understood how it worked.
+Then did base64 -d data.txt and there it was.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit11.html
