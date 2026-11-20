@@ -1,0 +1,28 @@
+Date: 2026/11/20
+Status: Complete
+
+Objective: 
+Password is in the data.txt file again but all the lowercase (a-z) and uppercase (A-Z) have been rotated by 13 positions.
+So ROT13 encryption.
+
+Commands used:
+ls - Lists directory contents.
+man tr - Manual page for tr.
+tr --help - tr command helps with usage, arguments and options.
+cat data.txt | 'A-Za-z' 'N-ZA-Mn-za-m' - Pipes the cat to rotate the letters by 13 spots using ROT13 decryption.
+                set1      set2           Set 1 tells us which letters to change and set 2 tells us how to change.
+
+Thought process:
+Not really sure what to do yet so ill read the ROT13 material given by overthewire
+It seems like i have to use tr since i read the man and help pages about it.
+I really don't know how i should know this so i watched a video on how tr works and i kind of understand it.
+So yeah as i figured you have to put the first set and then the second set and tell it what to do.
+Starting with a cat pipe so cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' .
+The command means that the output get put into the right command which tells it to change A-Z and a-z into the 13-26 and 1-12.
+And so it's done.
+
+notes:
+ROT13 (Rotate-13) - Letters get rotated 13 position for example A becomes N and N becomes A, because the latin alphabet has 26 letters 2 x 13.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit12.html
