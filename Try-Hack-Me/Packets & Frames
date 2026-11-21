@@ -1,11 +1,13 @@
 Date: 2026/11/19
-Status: Incomplete
+Status: Complete
 
 Objective: 
-Teach the differences between packets and frames, how data travels
+Teach the differences between packets and frames, how data travels and what ports are and what they do.
 
 Learned: 
 What packets and frames are.
+The three-way handshake
+Ports and some of their numbers.
 
 notes:
 Trick to remember OSI model layers - Please Do Not Throw Sausage Pizza Away.
@@ -17,14 +19,22 @@ Packet - Piece of data from layer 3 (Network) of OSI model. Contains info such a
     Destination address - The IP address the package is being sent to so that data knows where to travel next.
 Frame - Piece of data used at layer 2 (Data)of the OSI model. Encapsulates the packet and adds additional info such as MAC addresses.
 TCP (Transmission control protocol) - Packets sent with precision.
-  Three-way handshake - The term given for the process used to establish a connection between two devices.
-    Step 1 SYN - A SYN message is the initial packet sent by a client during the handshake. Used to initiate a conection and sync the wto devices together.
-    Step 2 SYN/ACK - Packet sent by the receiving device (server) to acknowledge the sync attempt from the client.
-    Step 3 ACK - The acknowledgement packet can be used by either client or server to acknowledge that a series of mesages/packets have been successfully received.
-    Step 4 DATA - Once a connection has been established, data such as bytes of a file is sent via the "Data" message.
-    Step 5 FIN - Used to cleanly (properly) close the connection after it has been complete.
-
-
-
+  Stateful protocol - Establishes a connection between two devices before transmitting application data.
+    Three-way handshake - The term given for the process used to establish a connection between two devices.
+      Step 1 SYN - A SYN message is the initial packet sent by a client during the handshake. Used to initiate a conection and sync the wto devices together.
+      Step 2 SYN/ACK - Packet sent by the receiving device (server) to acknowledge the sync attempt from the client.
+      Step 3 ACK - The acknowledgement packet can be used by either client or server to acknowledge that a series of mesages/packets have been successfully received.
+      Step 4 DATA - Once a connection has been established, data such as bytes of a file is sent via the "Data" message.
+      Step 5 FIN - Used to cleanly (properly) close the connection after it has been complete.
+UDP (User datagram protocol) - Used to communicate between devices.
+  Stateless protocol - Doesn't require constant connection between two devices for data to be sent.
+Ports - Ports are numbers (0–65535) that allow an operating system to direct incoming network traffic to the correct application or service on a device, while IP addresses identify the device itself.
+  FTP (File transfer protocol) port 21 - Used for downloading files from a central location built on a client server model.
+  SSH (Secure Shell) port 22 - Used to securely login to systems via a text-based interface for management.
+  HTTP (Hypertext transfer protocol) port 80 - Powers the WWW. Uses downloading text, images and videos of web pages.
+  HTTPS (HTTP but secure) port 443 - Same as HTTP but does it securely using encryption.
+  SMB (Server message block) port 445 - Similar to FTP but also allows the sharing of devices like printers.
+  RDP (Remote desktop protocol) port 3389 - Securely loggin in to a system using a visual desktop interface.
+  
 Link: 
 https://tryhackme.com/room/packetsframes
