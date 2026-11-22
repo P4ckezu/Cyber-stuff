@@ -17,6 +17,7 @@ gzip -d file.gz - Decompresses with gzip and -d means decompress.
 mv file file.bz2 - Renames the file, file to file.bz2 and bz2 is the extension for bzip2.
 bzip2 -d file.bz2 - Decompresses with gzip and -d means decompress.
 mv file file.tar - Renames the file, file to file.tar.
+tar xf file.tar - Extracts the tar archieve into the current directory.
 
 Thought process:
 I'll read through everything now.
@@ -30,6 +31,7 @@ I had to find some help for this one so i have to use tar which is a archieving 
 Now ill use tar xf file.tar to extract the file and if i now use ls i should have data5.txt data.txt file.tar and yep we do.
 now file data5.bin also a tar archieve and we can get rid of file.tar now and the data.txt. I really dont have time to write down the next steps.
 I kept extracting the tar file and renaming things and decompressing just kept doing the same process until i got hit with a ASCII type of a file and there the password was.
+I MIGHT WRITE THE REST LATER IF I FEEL THE NEED TO!!
 
 Link: 
 https://overthewire.org/wargames/bandit/bandit13.html
