@@ -1,0 +1,35 @@
+Date: 2026/11/21
+Status: Complete
+
+Objective: 
+Decompress the hexdump of a file that has been repeatedly compressed and retrieve the password inside data.txt.
+
+Commands used:
+ls - Lists files inside directory.
+cat data.txt - Checks inside the file.
+mkdir /tmp/<directory> - Creates a directory inside the tmp directory.
+cp data.txt /tmp/<directory> - Copies the data file over to the new directory inside tmp.
+cd /tmp/<directory> - Changes directory to the new one.
+xxd -r data.txt > data - Reverses the hexdump of the file and redirects it inside a file called data. -r means revert.
+file data - Shows what type of file data is.
+mv data file.gz - Renames the data file to file.gz and gz is the extension for gzip.
+gzip -d file.gz - Decompresses with gzip and -d means decompress.
+mv file file.bz2 - Renames the file, file to file.bz2 and bz2 is the extension for bzip2.
+bzip2 -d file.bz2 - Decompresses with gzip and -d means decompress.
+mv file file.tar - Renames the file, file to file.tar.
+
+Thought process:
+I'll read through everything now.
+I have no idea what to do. But ill try anyways so i'll create a directory inside tmp.
+I copied over the data.txt file using cp data.txt /tmp/<dir>. I went in the directory and the file is there.
+I read about xxd and i know i have to use that one so xxd -r data.txt > data. This makes it faster for me to check the file type.
+The file is now compressed by gzip so ill have to change the file name so mv data file.gz. Now ill decompress it gzip -d file.gz
+Now lets use ls to see if it is still there. It is and now we check what type of file the file is. Its bzip2 now so ill change the name again.
+mv file file.bz2 and then use bzip2 -d file.bz2. I repeated this process once more and now its a tar archieved file and i have no clue what to do again.
+I had to find some help for this one so i have to use tar which is a archieving command so we have to change the name again mv file file.tar .
+Now ill use tar xf file.tar to extract the file and if i now use ls i should have data5.txt data.txt file.tar and yep we do.
+now file data5.bin also a tar archieve and we can get rid of file.tar now and the data.txt. I really dont have time to write down the next steps.
+I kept extracting the tar file and renaming things and decompressing just kept doing the same process until i got hit with a ASCII type of a file and there the password was.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit13.html
