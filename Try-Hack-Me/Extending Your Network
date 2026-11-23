@@ -1,0 +1,25 @@
+Date: 2026/11/23
+Status: Incomplete
+
+Objective: 
+Teach firewall categories, 
+
+Learned: 
+
+
+notes:
+Firewall - Filters traffic.
+  Firewall categories:
+    Stateful - Rather than inspecting an individual packet, this firewall determines the behaviour of a device based uupon the entire connection.
+    Stateless - Uses a stitic set of rules to determine whether or not individual packets are acceptable or not.
+VPN (Virtual private network) - Allows devices to separate networks to communicate securely by createing a dedicated path between each other over the internet (tunnel).
+  Benefits of VPN - Allows to networks in different geographical locations to be connected, offers privacy and anonymity.
+    Technology:
+      PPP - Allows authentication and provides encryption of data. VPNs work by using a private key and public certificate. (Not capable of leaving a network by itself (non-routable))
+      PPTP (Point to point tunneling protocol) - Allows data from PPP to travel and leave a network. Weakly encrypted to alternatives. Easy to set up and supported by most devices.
+      IPSec (Internet protocol security) - Encrypts data using the existing IP framework. Difficult to setup. Strong encryption. Supported by many devices.
+
+
+
+Link: 
+https://tryhackme.com/room/extendingyournetwork
