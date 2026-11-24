@@ -1,11 +1,13 @@
 Date: 2026/11/23
-Status: Incomplete
+Status: Complete
 
 Objective: 
-Teach firewall categories, 
+Teach firewall categories and VPN basics.
 
 Learned: 
-
+What a firewall is and how it works.
+What categories they split into.
+How a VPN works.
 
 notes:
 Firewall - Filters traffic.
@@ -18,8 +20,7 @@ VPN (Virtual private network) - Allows devices to separate networks to communica
       PPP - Allows authentication and provides encryption of data. VPNs work by using a private key and public certificate. (Not capable of leaving a network by itself (non-routable))
       PPTP (Point to point tunneling protocol) - Allows data from PPP to travel and leave a network. Weakly encrypted to alternatives. Easy to set up and supported by most devices.
       IPSec (Internet protocol security) - Encrypts data using the existing IP framework. Difficult to setup. Strong encryption. Supported by many devices.
-
-
+VLAN (Virtual local area network) - Allows specific devices within a network to be virtually split up. For example sales department (VLAN 1) and accounting department (VLAN 2).
 
 Link: 
 https://tryhackme.com/room/extendingyournetwork
