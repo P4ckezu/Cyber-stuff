@@ -1,0 +1,23 @@
+Date: 2026/11/34
+Status: Incomplete
+
+Objective: 
+
+
+Learned: 
+
+
+notes:
+DNS (Domain name system) - Attaches names to IP addresses.
+Domain hierarchy - Right to left order in the domain name systems.
+  Root domain - "." Just the period.
+  TLD (Top-level domain) - The most righthand part of a domain name like .com . Splits into two types.
+    gTLD (Generic top level) - Used to show what the TLD is for like edu = education, org = organisation.
+    ccTLD (Country code top level domain) - Used for geographical purposes, for example .ca for sites based in Canada.
+  Second-level domain - The name of the DNS, for example github. Limited to 63 characters and also a-z, 0-9 and hyphens (cannot start or end with hyphens or have consecutive hyphens.)
+  Subdomain - Sits on the left-hand side of the Second-level domain, for example admin. .
+    Subdomain limits - Same restriction as Second-level domain. Can create multiple subdomains to create longer names 253 character limit.
+
+    
+Link: 
+https://tryhackme.com/room/dnsindetail
