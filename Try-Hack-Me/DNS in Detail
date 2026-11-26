@@ -1,11 +1,11 @@
 Date: 2026/11/34
-Status: Incomplete
+Status: Complete
 
 Objective: 
-Go more in depth to DNS and 
+Go more in depth to DNS and what happens behind the scenes during a request.
 
 Learned: 
-
+What happens when a DNS request is made.
 
 notes:
 DNS (Domain name system) - Attaches names to IP addresses.
@@ -17,7 +17,19 @@ Domain hierarchy - Right to left order in the domain name systems.
   Second-level domain - The name of the DNS, for example github. Limited to 63 characters and also a-z, 0-9 and hyphens (cannot start or end with hyphens or have consecutive hyphens.)
   Subdomain - Sits on the left-hand side of the Second-level domain, for example admin. .
     Subdomain limits - Same restriction as Second-level domain. Can create multiple subdomains to create longer names 253 character limit.
-
+DNS record types - DNS isn't just for websites.
+  A record - Resolve to IPv4 addresses.
+  AAAA record - Resolve to IPv6 adresses.
+  CNAME record - Resolve to another domain. So it maps an alias (subdomain) to another domain name rather than an IP address.
+  MX record - Resolve to the address of the server that handle the email for the domain. So directs emails to the right mail server.
+  TXT record - A TXT record lets a domain owner attach arbitrary, human- or machine-readable text to a domain. Originally for notes but now primarily used for security.
+DNS request:
+  1. When a request is made, your computer will first check its local cache to see if you've previously looked up the adress recently; if not a request to your recurseive DNS server will be made.
+  2. Recursive DNS server has a local cache of recently looked up domain names. If a result is found locally, this is sent back to your computer and the request ends here.
+     If the request is not found locally, a journey begins to find the correct answer, starting with the internet's root DNS server.
+  3. Root servers redirect you to the correct Top Level Domain Server, depending on your request, for example .com .
+  4. The TLD server holds records for where to find the authoritative server to answer the DNS request. The authoritative server is often also known as the nameserver.
+  5. Depending on the record type, the DNS record is then sent back to the Recursive DNS Server, where a local copy will be cached for future requests.
     
 Link: 
 https://tryhackme.com/room/dnsindetail
