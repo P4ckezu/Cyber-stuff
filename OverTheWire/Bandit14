@@ -1,0 +1,38 @@
+Date: 2026/11/27
+Status: Complete
+
+Objective: 
+Find the password inside a file only accessible by bandit14 using a private SSH key.
+
+Commands used:
+ls - lists the contents of the current directory.
+cd /etc/bandit_pass - Changes directory according to the given path.
+ls -la - Lists the contents in a long listing format and shows hidden files too.
+cat bandit14 - Checks the contents of the file.
+cd - Changes directory.
+exit - Closes the connection.
+scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private . - Secure copies the file in bandit13 to my own current directory which is the "." at the end. When using scp -P is for port and for ssh -p.
+chmod 700 sshkey.private - Changes mode so basically the permissions.
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220 - ssh using the private key given to us. -i means to identify 
+cat /etc/bandit_pass/bandit14 - Opens the file at the end of the given path.
+
+Thought process:
+This one was different so i spent the first 15 minutes just looking through all the commands and what they do.
+I started by checking the directories i was given i checked the hint, bandit14 and sshkey.private.
+Then i knew i had to use private SSH key to gain access to the file. Wasnt sure how to do it tho so i tried different SSH combinations but nothing worked.
+So i decided to try the other commands i was given. I researched the the scp command and after like 15 minutes i found the correct way to use it.
+I copied the sshkey.private to my own virtual machine and from there used chmod to change the permissions so that i could use it just to make sure.
+I then tried using ssh but wasnt sure how i should do it so i did a bit of research and found a way to get in using ssh -i which tells me to identify the file that has the private key is in.
+After that i searched up the file bandit14 inside /etc/bandit_pass and i got the password for the next one.
+
+I did quite a lot of mistakes with this one at first but then it went pretty well. I didn't write everything i did since i did this a few hours ago and dont remember every detail.
+
+Notes:
+Chmod changes the file permissions so something like this -rwxr-xr-- .
+The first character tells us whether it's a file or a directory.
+Next 3 are the owners permissions then the group permissions and others. So r - read,  w - write,  x - execute.
+                                                                            100 so 4    010  so 2    001  so 1    like in binary 001 = 1, 010 = 2, 011 = 3
+Using chmod you can give full permissions to everyone like this : chmod 777 <file>
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit14.html
