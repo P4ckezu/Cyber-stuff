@@ -1,0 +1,16 @@
+Date: 2026/11/28
+Status: Complete
+
+Objective: 
+Retrieve the password by submitting the password of the current level to localhost on port 30000.
+
+Commands used:
+ls - Lists contents of the current directory.
+nc localhost 30000 - Basically connects to a server on localhost network on port 30000.
+  <Bandit14 password> - I had to paste the last password after the command to get the next password.
+
+Thought process:
+So i kind of accidentally got the password didn't really run into problems i spent 30 researching at first when i started i got it instantly.
+
+Link: 
+https://overthewire.org/wargames/bandit/bandit15.html
